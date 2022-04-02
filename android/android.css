@@ -1,0 +1,11 @@
+html, body {
+    background: black;
+}
+
+.android {
+    height: 100vh;
+    background: url(android.gif);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
