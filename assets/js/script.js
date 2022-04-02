@@ -31,7 +31,7 @@ var getOS = function () {
     var winVer = parseInt(g_winVersion.split('.')[0]);
     var isMac = (ua.indexOf('Mac') > -1);
     var isLikeMac = (ua.indexOf('like Mac') > -1); // iOS
-    var isAndroid = (ua.indexOf('android') > -1);
+    var isAndroid = (ua.indexOf('Android') > -1);
 
     if (isAndroid) {
         return 'Android';
@@ -56,16 +56,17 @@ var getUrl = function (isFullscreenMode) {
     var os = getOS();
 
     var urlMap = { // os => url
-        'Win11': 'https://updatefaker.com/windows11/',
-        'Win10': 'https://updatefaker.com/windows10/',
-        'WinXP': 'https://updatefaker.com/xp/',
+        'Win11': 'https://updatefaker.com/windows11/index.html',
+        'Win10': 'https://updatefaker.com/windows10/index.html',
+        'WinXP': 'https://updatefaker.com/xp/index.html',
         'iOS': 'assets/ios-boot.mp4',
-        'Android': 'assets/black.mp4',
-        'Mac': 'https://updatefaker.com/osx/'
+        'Android': 'android/index.html',
+        'Mac': 'https://updatefaker.com/osx/index.html',
+        'Black': 'assets/black.mp4'
     };
 
     if ('Unknow' === os) {
-        return isFullscreenMode ?　urlMap['Win10'] : urlMap['Android'];
+        return isFullscreenMode ?　urlMap['Win10'] : urlMap['Black'];
     }
 
     return urlMap[os];
