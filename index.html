@@ -1,15 +1,17 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <link href="assets/css/reset.css" rel="stylesheet" type="text/css">
-    <link href="assets/css/style.css" rel="stylesheet" type="text/css">
     <meta name="robots" content="index, follow">
     <meta name="googlebot" content="index, follow">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Just for fun with screen prank">
-    <meta name="keywords" content="prank,screen,joke,loading,fool">
-    <title>Click Me</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="description" content="Just for fun with screen prank, full screen by clicking the button with fake reboot loading and Fake Blue Screen of Death (BSOD) page.">
+    <meta name="keywords" content="screen,prank,joke,loading,fool,BSOD">
+    <meta name="author" content="Ranger Chan">
+    <title>Don't Click The Button - ScreenPrank</title>
+    <link href="assets/css/reset.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css">
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-E1F6EPWBVQ"></script>
@@ -21,15 +23,18 @@
     </script>
 </head>
 <body>
-    <div class="container">
-        <button id="click">Click Me</button>
-        <video id="video" controls>
-            <source id="video-src" src="" type="video/mp4">
-        </video>
-    </div>
-    <div id="fullscreen">
-        <iframe id="iframe" src=""></iframe>
-    </div>
+    <main>
+        <div class="container">
+            <h1 id="title">Don't Click The Button</h1>
+            <button id="click">Don't Click Me</button>
+            <video id="video" controls>
+                <source id="video-src" src="" type="video/mp4">
+            </video>
+        </div>
+        <div id="fullscreen">
+            <iframe id="iframe" src=""></iframe>
+        </div>
+    </main>
     <script src="assets/js/script.js"></script>
 </body>
 </html>

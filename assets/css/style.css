@@ -2,8 +2,16 @@
     width: 100vw;
     height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+#title {
+    font-size: 2rem;
+    padding: 20px;
+    text-align: center;
+    font-weight: 600;
 }
 
 #click {
